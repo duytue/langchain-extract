@@ -85,6 +85,9 @@ def _make_prompt_template(
         "Only extract information that is relevant to the provided text. "
         "If no information is relevant, use the schema and output "
         "an empty list where appropriate."
+        "Do not copy information from my examples."
+        "Please provide the extracted information in the format specified by the schema."
+        "Thông tin được trả ra phải ở tiếng Việt."
     )
     if instructions:
         system_message = ("system", f"{prefix}\n\n{instructions}")
